@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 
-import { withRouter, Route, Switch } from "react-router";
+import { withRouter, Route, Switch, Redirect } from "react-router";
 
 import Singers from "./components/Singers";
 import Albums from "./components/Albums";
@@ -402,6 +402,7 @@ function App(props) {
               .reduce((acc, cur) => acc + cur, 0)}
           />
         </Route>
+        <Redirect from="/" to="/singers"></Redirect>
       </Switch>
     </Fragment>
   );
