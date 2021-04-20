@@ -1,0 +1,11 @@
+.custom-height {
+  max-height: 50vh;
+}
+
+.custom-list {
+  list-style-type: none;
+}
+
+.custom-container-height {
+  min-height: 60vh;
+}
